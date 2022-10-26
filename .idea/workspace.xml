@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6134172-7232-4b8d-ac72-ed7d7ce1c98b" name="Changes" comment="[Add] Liste for Strings">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Liste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Liste.java" afterDir="false" />
-    </list>
+    <list default="true" id="c6134172-7232-4b8d-ac72-ed7d7ce1c98b" name="Changes" comment="[Add] JavaDoc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,9 +35,15 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn javadoc:javadoc " />
+    </option>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -48,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666771302941</updated>
-      <workItem from="1666771304534" duration="2088000" />
+      <workItem from="1666771304534" duration="2404000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1666771430660</created>
@@ -64,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666773314938</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[Add] JavaDoc">
+      <created>1666773662929</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666773662929</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,6 +95,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="[Add] Liste for Strings" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] Liste for Strings" />
+    <MESSAGE value="[Add] JavaDoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] JavaDoc" />
   </component>
 </project>
