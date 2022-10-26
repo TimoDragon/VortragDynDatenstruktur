@@ -3,11 +3,20 @@ package org.example.model;
 public class Liste {
     private Node first;
 
+    /**
+     * Checks if the list is empty
+     * @return true or false
+     */
     public boolean isEmpty(){
         return first == null;
     }
 
-    public void insert(String pInhalt){
+    /**
+     * Adds String to the list
+     * @param pInhalt
+     */
+    public void
+    insert(String pInhalt){
         Node tmp = first;
         if (first == null){
             first = new Node(pInhalt);
@@ -19,6 +28,10 @@ public class Liste {
         }
     }
 
+    /**
+     * Removes first object
+     * @return removed object
+     */
     public Node dequeue(){
         Node tmp = first;
         if(!isEmpty()){
@@ -27,6 +40,10 @@ public class Liste {
         return tmp;
     }
 
+    /**
+     * Returns String representation of List
+     * @return
+     */
     public String toString(){
         String ret = "[";
         Node tmp = first;
