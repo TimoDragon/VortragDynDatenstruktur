@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.model.Liste;
+import org.example.model.Stack;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,14 +14,13 @@ public class Main {
 
         System.out.println(l1);
 
-        System.out.println(l1.dequeue());
-
         System.out.println(l1);
 
         Liste l2 = new Liste();
-        System.out.println(l2.dequeue());
-
         System.out.println(l2);
+
+        Stack s1 = new Stack();
+
 
 
 

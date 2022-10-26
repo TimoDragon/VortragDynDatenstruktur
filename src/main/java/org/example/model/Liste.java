@@ -28,17 +28,7 @@ public class Liste {
         }
     }
 
-    /**
-     * Removes first object
-     * @return removed object
-     */
-    public Node dequeue(){
-        Node tmp = first;
-        if(!isEmpty()){
-            first = first.getNext();
-        }
-        return tmp;
-    }
+
 
     /**
      * Returns String representation of List
