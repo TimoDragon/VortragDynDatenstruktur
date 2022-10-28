@@ -3,63 +3,54 @@ package org.example.model;
 public class Stack {
     private Node first;
 
-    /**
-     * Checks if the list is empty
-     * @return true or false
-     */
-    public boolean isEmpty(){
+    public void push(String str) {
+        if (str == null) {
+            return;
+        }
+
+        if (first == null) {
+            first = new Node(str);
+            return;
+        }
+
+        Node tmp = first;
+        first = new Node(str);
+        first.setNext(tmp);
+    }
+
+    public String pop() {
+        Node tmp = first;
+        if (first.getNext() != null) {
+            first = tmp.getNext();
+        }
+
+        return tmp.getInhalt();
+    }
+
+    public String top() {
+        return first.getInhalt();
+    }
+
+    public boolean isEmpty() {
         return first == null;
     }
 
-    /**
-     * Das Objekt pObject wird oben auf den Stapel gelegt. Falls
-     * pObject gleich null ist, bleibt der Stapel unverändert.
-     * @param pInhalt
-     */
-    public void push(String pInhalt){
-        //ToDO implement
-    }
-
-    /**
-     * Das zuletzt eingefügte Objekt wird von dem Stapel entfernt.
-     * Falls der Stapel leer ist, bleibt er unverändert
-     * @return
-     */
-    public String pop(){
-        //ToDO implement
-        return null;
-    }
-
-    /**
-     * Die Anfrage liefert das oberste Stapelobjekt. Der Stapel bleibt
-     * unverändert. Falls der Stapel leer ist, wird null zurückgegeben.
-     * @return
-     */
-    public String top(){
-        //ToDO Implement
-        return null;
-    }
-
-    /**
-     * Returns String representation of List
-     * @return
-     */
-    public String toString(){
+    public String toString() {
         String ret = "[";
-        Node tmp = first;
 
-        while (tmp != null){
-            if(tmp.getNext() == null){
-                ret = ret + tmp.getInhalt();
-            }else {
-                ret = ret + tmp.getInhalt() + ";";
+        Node tmp = first;
+        while (tmp != null) {
+            ret += tmp.getInhalt();
+
+            if (tmp.getNext() != null) {
+                ret += ";";
             }
+
             tmp = tmp.getNext();
         }
 
+        ret += "]";
 
-        ret = ret + "]";
         return ret;
     }
-
 }

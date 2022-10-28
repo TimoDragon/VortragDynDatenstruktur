@@ -15,8 +15,7 @@ public class Liste {
      * Adds String to the list
      * @param pInhalt
      */
-    public void
-    insert(String pInhalt){
+    public void insert(String pInhalt){
         Node tmp = first;
         if (first == null){
             first = new Node(pInhalt);
@@ -28,7 +27,17 @@ public class Liste {
         }
     }
 
-
+    /**
+     * Removes first object
+     * @return removed object
+     */
+    public Node dequeue(){
+        Node tmp = first;
+        if(!isEmpty()){
+            first = first.getNext();
+        }
+        return tmp;
+    }
 
     /**
      * Returns String representation of List
@@ -52,5 +61,29 @@ public class Liste {
         return ret;
     }
 
+    public void push(String str) {
+        if (str == null) {
+            return;
+        }
 
+        Node tmp = first;
+        first = new Node(str);
+        first.setNext(tmp);
+    }
+
+    public Node pop() {
+        if (first == null) {
+            return null;
+        }
+
+        Node f = first;
+        Node tmp = first.getNext();
+        first = tmp;
+
+        return first;
+    }
+
+    public Node top() {
+        return first;
+    }
 }

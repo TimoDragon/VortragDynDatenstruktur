@@ -1,29 +1,19 @@
 package org.example;
 
-import org.example.model.Liste;
 import org.example.model.Stack;
+import org.example.model.SuperList;
 
 public class Main {
     public static void main(String[] args) {
+        SuperList s = new SuperList();
+        s.append("Timo");
+        s.append("2");
+        s.append("test");
+        s.append("bla");
+        s.insert("hahaha");
 
-        Liste l1 = new Liste();
-
-        l1.insert("Hallo Welt");
-        l1.insert("Peter Pan");
-        l1.insert("Manuel");
-
-        System.out.println(l1);
-
-        System.out.println(l1);
-
-        Liste l2 = new Liste();
-        System.out.println(l2);
-
-        Stack s1 = new Stack();
-
-
-
-
-
+        s.toLast();
+        s.remove();
+        System.out.println(s.toString());
     }
 }

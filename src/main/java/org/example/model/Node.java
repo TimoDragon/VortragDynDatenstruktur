@@ -20,6 +20,10 @@ public class Node {
         return inhalt;
     }
 
+    public void setInhalt(String str) {
+        this.inhalt = str;
+    }
+
     public String toString(){
         return "["+inhalt+"]";
     }
