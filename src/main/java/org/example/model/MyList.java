@@ -124,6 +124,7 @@ public class MyList {
 
         if (isEmpty()) {
             first = list.first;
+            return;
         }
 
         Node tmp = first;
